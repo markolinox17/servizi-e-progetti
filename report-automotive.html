@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive e la transizione verso l’ibrido-elettrico — Report JEVE</title>
+  <meta name="description" content="Report JEVE sulla transizione ibrido-elettrica nel settore automotive: domanda, costruttori, supply chain e scenari.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&amp;family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="nav-pill">
+      <a href="https://jeve.it" class="nav-mark" aria-label="JEVE — home">
+        <img src="./assets/leone-rosso.png" alt="JEVE"
+             onerror="this.insertAdjacentHTML('afterend','&lt;span class=&quot;nav-mark-txt&quot;&gt;JE&lt;i&gt;VE&lt;/i&gt;&lt;/span&gt;'); this.remove();">
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Navigazione del sito">
+        <a href="https://jeve.it/" class="nav-link">Home</a>
+        <a href="./index.html" class="nav-link is-current" aria-current="page">Servizi e Progetti</a>
+        <a href="https://jeve.it/chi-siamo/" class="nav-link">Chi siamo</a>
+        <a href="https://jeve.it/entra-in-jeve/" class="nav-link">Entra in JEVE</a>
+      </nav>
+
+      <a href="./index.html#contatti" class="nav-cta">Parliamone</a>
+
+      <button class="nav-burger" id="menuBtn" aria-label="Apri il menu" aria-expanded="false" aria-controls="navMenu">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="pub-hero">
+      <div class="shell">
+        <header class="sec-head pub-head">
+          <div class="pub-head-t">
+            <p class="eyebrow">Report strategico &middot; Automotive</p>
+            <h1 class="sec-title rep-title">Automotive e la transizione verso l’<span class="accent">ibrido-elettrico</span></h1>
+          </div>
+          <div class="pub-head-ctas">
+            <a class="btn btn-line" href="./index.html#progetti"><span class="ar ar-l">&larr;</span> Servizi e progetti</a>
+            <a class="btn btn-solid" href="./assets/report-automotive.pdf" target="_blank" rel="noopener">Apri il report <span class="ar">&rarr;</span></a>
+          </div>
+        </header>
+
+        <dl class="rep-meta">
+          <div><dt>Data di redazione</dt><dd>Settembre 2026</dd></div>
+          <div><dt>Autori</dt><dd>Matteo Poncato, Edoardo Salvalaio</dd></div>
+          <div><dt>Area</dt><dd>Automotive</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec sec-tint sec-grid">
+      <div class="shell rep-wrap">
+        <div class="rep-block">
+          <p class="eyebrow">Sommario esecutivo</p>
+          <p class="rep-lead">Il report analizza il profondo riposizionamento strategico in atto nel settore automotive globale. Nonostante la forte spinta normativa verso l’elettrificazione totale (BEV), stiamo assistendo a una decisa riallocazione degli investimenti da parte dei principali costruttori verso le motorizzazioni ibride (HEV, MHEV, PHEV). L’analisi esplora i driver di questa controtendenza&mdash;come la carenza di infrastrutture di ricarica, la sensibilità al prezzo dei consumatori e l’ansia da autonomia&mdash;dimostrando come l’ibrido non sia più considerato una semplice &ldquo;tecnologia ponte&rdquo; temporanea, ma un segmento strutturalmente difendibile e altamente profittevole nel medio-lungo periodo.</p>
+        </div>
+
+        <div class="rep-block">
+          <p class="eyebrow">Punti chiave</p>
+          <div class="rep-keys" data-n="4">
+          <article class="rep-key">
+            <span class="rep-key-n">01</span>
+            <h3>Riposizionamento dei costruttori (OEM)</h3>
+            <p>A fronte di marginalità spesso negative sui veicoli 100% elettrici, grandi gruppi come Volkswagen, Ford e General Motors stanno ridimensionando i piani BEV per espandere l’offerta ibrida, che garantisce margini operativi nettamente superiori.</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">02</span>
+            <h3>Evoluzione della domanda</h3>
+            <p>I consumatori (in particolare i cluster Mainstream e Frugal) sono frenati dal &ldquo;range anxiety&rdquo; e dai costi elevati dei BEV. Le auto ibride offrono una transizione senza frizioni, riducendo i consumi fino al 35% senza imporre cambiamenti drastici nello stile di vita o dipendenza da reti pubbliche di ricarica disomogenee.</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">03</span>
+            <h3>L’ascesa dei player cinesi e l’architettura EREV</h3>
+            <p>Costruttori asiatici come BYD stanno rivoluzionando il mercato europeo con strategie di leadership di costo. Parallelamente, si consolida la tecnologia EREV (Extended-Range Electric Vehicle), che utilizza il motore termico solo come generatore, offrendo autonomie prossime ai 1.000 km e azzerando l’ansia da ricarica.</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">04</span>
+            <h3>Sfide geopolitiche e tecnologiche</h3>
+            <p>Il settore deve navigare tra l’introduzione di dazi europei sui veicoli importati dalla Cina e la dipendenza dalle materie prime critiche (litio, cobalto) per le batterie. Nuove tecnologie, come le celle ibride litio-sodio di CATL, si candidano a mitigare questi colli di bottiglia.</p>
+          </article>
+          </div>
+        </div>
+
+        <div class="rep-block">
+          <p class="eyebrow">Market insights</p>
+          <div class="rep-mi">
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Mercato globale (TAM)</p>
+            <p class="rep-mi-val">4.424 mld $</p>
+            <p class="rep-mi-ins">L’intero bacino di vendita annuale globale per veicoli passeggeri e commerciali (circa 99,8 milioni di unità nel 2025).</p>
+          </article>
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Mercato servibile (SAM)</p>
+            <p class="rep-mi-val">808 mld $</p>
+            <p class="rep-mi-ins">La quota (18,25% del TAM) realisticamente indirizzabile dalle tecnologie ibride, calcolata sui volumi di adozione per macro-regione.</p>
+          </article>
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Quota ottenibile (SOM)</p>
+            <p class="rep-mi-val">299 mld $</p>
+            <p class="rep-mi-ins">La core demand strutturalmente difendibile (37% del SAM) depurata dai consumatori propensi a migrare verso il puro elettrico o a tornare all’endotermico.</p>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-white">
+      <div class="shell">
+        <div class="rep-dl">
+          <div>
+            <p class="eyebrow">Scarica il report completo</p>
+            <h2 class="reports-cta-t">Cinque profili di acquirenti e gli <span class="accent">scenari</span> del prossimo decennio</h2>
+            <p class="rep-dl-d">Scopri l’indagine PESTEL dettagliata, la segmentazione della domanda con i 5 profili di acquirenti (Tech Enthusiast, Dreamers, Mainstream, Luxurious, Frugal), le dinamiche della supply chain delle batterie e gli scenari futuri che guideranno il settore automotive nel prossimo decennio.</p>
+          </div>
+          <a class="btn btn-solid" href="./assets/report-automotive.pdf" target="_blank" rel="noopener">Apri il report <span class="ar">&rarr;</span></a>
+        </div>
+
+        <div class="pub-foot-cta">
+          <a class="btn btn-line" href="./index.html#progetti"><span class="ar ar-l">&larr;</span> Servizi e progetti</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <a href="https://jeve.it" class="footer-logo">
+          <img src="./assets/logo-jeve-bianco.png" alt="JEVE" onerror="this.src='./assets/logo-jeve-compatto-bianco.png'; this.onerror=function(){this.remove()};">
+        </a>
+        <p class="footer-name"><b>JEVE</b><span>Junior Enterprise Venezia</span></p>
+        <p class="footer-claim">Step into the future of your business.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="fcol">
+          <h3>Esplora</h3>
+          <a href="./index.html#servizi">Servizi</a>
+          <a href="./index.html#metodo">Metodo</a>
+          <a href="./index.html#progetti">Progetti</a>
+          <a href="./index.html#impatto">Impatto</a>
+          <a href="https://jeve.it/partner-2/">Partner</a>
+          <a href="https://jeve.it/chi-siamo/">Chi siamo</a>
+          <a href="https://jeve.it/entra-in-jeve/">Entra in JEVE</a>
+        </div>
+        <div class="fcol">
+          <h3>Seguici</h3>
+          <a href="https://it.linkedin.com/company/jeve-junior-enterprise-venezia" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/jeve.venezia/" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:info@jeve.it">Email</a>
+        </div>
+        <div class="fcol">
+          <h3>Venezia</h3>
+          <p class="faddr">
+            Cannaregio 2978<br>
+            30121 Venezia, VE<br>
+            +39 391 720 8715
+          </p>
+          <p class="fvat">P.IVA: 04548570276<br>C.F.: 94096850279</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© 2026 <b>JEVE</b> Junior Enterprise Ca' Foscari Venezia</span>
+      <span class="fbot-links">
+        <a href="https://jeve.it/privacy-policy/">Privacy</a>
+        <a href="https://jeve.it/cookie-policy/">Cookie</a>
+      </span>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L’evoluzione del settore dei Data Centre — Report JEVE</title>
+  <meta name="description" content="Report JEVE sui data centre: domanda, vincoli energetici, M&amp;A e stime di mercato.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&amp;family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="nav-pill">
+      <a href="https://jeve.it" class="nav-mark" aria-label="JEVE — home">
+        <img src="./assets/leone-rosso.png" alt="JEVE"
+             onerror="this.insertAdjacentHTML('afterend','&lt;span class=&quot;nav-mark-txt&quot;&gt;JE&lt;i&gt;VE&lt;/i&gt;&lt;/span&gt;'); this.remove();">
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Navigazione del sito">
+        <a href="https://jeve.it/" class="nav-link">Home</a>
+        <a href="./index.html" class="nav-link is-current" aria-current="page">Servizi e Progetti</a>
+        <a href="https://jeve.it/chi-siamo/" class="nav-link">Chi siamo</a>
+        <a href="https://jeve.it/entra-in-jeve/" class="nav-link">Entra in JEVE</a>
+      </nav>
+
+      <a href="./index.html#contatti" class="nav-cta">Parliamone</a>
+
+      <button class="nav-burger" id="menuBtn" aria-label="Apri il menu" aria-expanded="false" aria-controls="navMenu">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="pub-hero">
+      <div class="shell">
+        <header class="sec-head pub-head">
+          <div class="pub-head-t">
+            <p class="eyebrow">Report strategico &middot; Infrastrutture digitali</p>
+            <h1 class="sec-title rep-title">L’evoluzione del settore dei <span class="accent">Data Centre</span></h1>
+          </div>
+          <div class="pub-head-ctas">
+            <a class="btn btn-line" href="./index.html#progetti"><span class="ar ar-l">&larr;</span> Servizi e progetti</a>
+            <a class="btn btn-solid" href="./assets/report-data-centre.pdf" target="_blank" rel="noopener">Apri il report <span class="ar">&rarr;</span></a>
+          </div>
+        </header>
+
+        <dl class="rep-meta">
+          <div><dt>Data di redazione</dt><dd>Luglio 2026</dd></div>
+          <div><dt>Autori</dt><dd>Leonardo Bonan, Edoardo Callegari</dd></div>
+          <div><dt>Area</dt><dd>Infrastrutture digitali</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec sec-tint sec-grid">
+      <div class="shell rep-wrap">
+        <div class="rep-block">
+          <p class="eyebrow">Sommario esecutivo</p>
+          <p class="rep-lead">Il report analizza la rapida evoluzione dell’infrastruttura digitale globale, evidenziando come i data centre siano diventati il fulcro strategico dell’economia mondiale. Spinto dall’adozione del cloud, dall’Intelligenza Artificiale generativa, dalle reti 5G e dalle urgenze geopolitiche legate alla sovranità digitale, il settore sta vivendo una trasformazione senza precedenti. L’analisi offre una mappatura completa delle dinamiche di domanda e offerta, esaminando i colli di bottiglia energetici, le tendenze di consolidamento tramite M&amp;A e le stime TAM-SAM-SOM, progettate per guidare le scelte strategiche di aziende e investitori.</p>
+        </div>
+
+        <div class="rep-block">
+          <p class="eyebrow">Punti chiave</p>
+          <div class="rep-keys" data-n="4">
+          <article class="rep-key">
+            <span class="rep-key-n">01</span>
+            <h3>Il paradigma dell’IA e l’obsolescenza tecnica</h3>
+            <p>L’IA generativa sta ridefinendo le architetture, richiedendo densità di potenza estreme (passando dai tradizionali 5-15 kW a oltre 135 kW per rack). Questo rende le vecchie infrastrutture obsolete e impone il passaggio a tecnologie di liquid cooling (raffreddamento a liquido).</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">02</span>
+            <h3>La crisi energetica</h3>
+            <p>L’accesso all’energia rappresenta oggi il vincolo più stringente alla crescita. I tempi di attesa per l’allaccio alle reti ad alta tensione superano spesso i 5-7 anni nei mercati saturi, spingendo gli operatori a investire verticalmente nella filiera energetica, fino a esplorare i piccoli reattori nucleari modulari (SMR).</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">03</span>
+            <h3>Record storico di M&amp;A</h3>
+            <p>Il mercato è in forte consolidamento, con un record di 57 miliardi di dollari in fusioni e acquisizioni nel 2024 e stime superiori ai 61 miliardi per il 2025. Operazioni colossali, come l’acquisizione di Aligned Data Centers per 40 miliardi, dimostrano la corsa del private equity e degli hyperscaler per assicurarsi capacità già operativa.</p>
+          </article>
+          <article class="rep-key">
+            <span class="rep-key-n">04</span>
+            <h3>Sovereign cloud ed edge computing</h3>
+            <p>Le normative europee sulla protezione dei dati (es. GDPR, NIS2) stanno trasformando la residenza del dato in un vincolo operativo che avvantaggia gli operatori locali, spingendo il mercato del sovereign cloud. Parallelamente, il 5G guida la decentralizzazione tramite Micro data centre periferici per le applicazioni a bassissima latenza.</p>
+          </article>
+          </div>
+        </div>
+
+        <div class="rep-block">
+          <p class="eyebrow">Market insights</p>
+          <div class="rep-mi">
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Mercato globale (TAM 2025)</p>
+            <p class="rep-mi-val">383,8 mld $</p>
+            <p class="rep-mi-ins">Previsto in crescita fino a 902,2 miliardi di dollari entro il 2033, con un CAGR dell’11,3%.</p>
+          </article>
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Mercato servibile EU (SAM)</p>
+            <p class="rep-mi-val">15&ndash;25 mld $</p>
+            <p class="rep-mi-ins">Valore stimato (orizzonte 2025-2027) per i nuovi operatori europei, sostenuto dalle normative di sovranità digitale.</p>
+          </article>
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">CapEx hyperscaler (2026)</p>
+            <p class="rep-mi-val">650&ndash;725 mld $</p>
+            <p class="rep-mi-ins">Investimenti in conto capitale previsti dai colossi del cloud, di cui il 75% è destinato esplicitamente all’infrastruttura IA.</p>
+          </article>
+          <article class="rep-mi-card">
+            <p class="rep-mi-lab">Consumo elettrico (2030)</p>
+            <p class="rep-mi-val">945 TWh</p>
+            <p class="rep-mi-ins">Il consumo globale di energia dei data centre raddoppierà, aggravando le attuali sfide per le reti elettriche.</p>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-white">
+      <div class="shell">
+        <div class="rep-dl">
+          <div>
+            <p class="eyebrow">Scarica il report completo</p>
+            <h2 class="reports-cta-t">Logiche competitive e <span class="accent">colli di bottiglia</span> energetici</h2>
+            <p class="rep-dl-d">Scopri l’analisi dettagliata delle logiche competitive, le stime di mercato (TAM-SAM-SOM), le tendenze M&amp;A e le strategie di integrazione verticale per affrontare i colli di bottiglia energetici nella nostra analisi sul settore dei Data Centre.</p>
+          </div>
+          <a class="btn btn-solid" href="./assets/report-data-centre.pdf" target="_blank" rel="noopener">Apri il report <span class="ar">&rarr;</span></a>
+        </div>
+
+        <div class="pub-foot-cta">
+          <a class="btn btn-line" href="./index.html#progetti"><span class="ar ar-l">&larr;</span> Servizi e progetti</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <a href="https://jeve.it" class="footer-logo">
+          <img src="./assets/logo-jeve-bianco.png" alt="JEVE" onerror="this.src='./assets/logo-jeve-compatto-bianco.png'; this.onerror=function(){this.remove()};">
+        </a>
+        <p class="footer-name"><b>JEVE</b><span>Junior Enterprise Venezia</span></p>
+        <p class="footer-claim">Step into the future of your business.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="fcol">
+          <h3>Esplora</h3>
+          <a href="./index.html#servizi">Servizi</a>
+          <a href="./index.html#metodo">Metodo</a>
+          <a href="./index.html#progetti">Progetti</a>
+          <a href="./index.html#impatto">Impatto</a>
+          <a href="https://jeve.it/partner-2/">Partner</a>
+          <a href="https://jeve.it/chi-siamo/">Chi siamo</a>
+          <a href="https://jeve.it/entra-in-jeve/">Entra in JEVE</a>
+        </div>
+        <div class="fcol">
+          <h3>Seguici</h3>
+          <a href="https://it.linkedin.com/company/jeve-junior-enterprise-venezia" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/jeve.venezia/" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:info@jeve.it">Email</a>
+        </div>
+        <div class="fcol">
+          <h3>Venezia</h3>
+          <p class="faddr">
+            Cannaregio 2978<br>
+            30121 Venezia, VE<br>
+            +39 391 720 8715
+          </p>
+          <p class="fvat">P.IVA: 04548570276<br>C.F.: 94096850279</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© 2026 <b>JEVE</b> Junior Enterprise Ca' Foscari Venezia</span>
+      <span class="fbot-links">
+        <a href="https://jeve.it/privacy-policy/">Privacy</a>
+        <a href="https://jeve.it/cookie-policy/">Cookie</a>
+      </span>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

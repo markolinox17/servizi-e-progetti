@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servizi &amp; Progetti — JEVE, Junior Enterprise Ca' Foscari Venezia</title>
+  <meta name="description" content="I servizi di consulenza di JEVE: business analysis, marketing, sales e IT. Metodo di lavoro e progetti realizzati.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&amp;family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="nav-pill">
+      <a href="https://jeve.it" class="nav-mark" aria-label="JEVE — home">
+        <img src="./assets/leone-rosso.png" alt="JEVE"
+             onerror="this.insertAdjacentHTML('afterend','&lt;span class=&quot;nav-mark-txt&quot;&gt;JE&lt;i&gt;VE&lt;/i&gt;&lt;/span&gt;'); this.remove();">
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Navigazione del sito">
+        <a href="https://jeve.it/" class="nav-link">Home</a>
+        <a href="#top" class="nav-link is-current" aria-current="page">Servizi e Progetti</a>
+        <a href="https://jeve.it/chi-siamo/" class="nav-link">Chi siamo</a>
+        <a href="https://jeve.it/entra-in-jeve/" class="nav-link">Entra in JEVE</a>
+      </nav>
+
+      <a href="#contatti" class="nav-cta">Parliamone</a>
+
+      <button class="nav-burger" id="menuBtn" aria-label="Apri il menu" aria-expanded="false" aria-controls="navMenu">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Servizi e progetti</p>
+
+          <h1 class="hero-title">
+            il tuo<br>obiettivo<br>
+            <span class="accent">il nostro progetto.</span>
+          </h1>
+
+          <p class="hero-lead">
+            business with a mission,<br>
+            students with a vision
+          </p>
+
+          <div class="hero-actions">
+            <a href="#servizi" class="btn btn-solid">Esplora i servizi <span class="ar">&rarr;</span></a>
+            <a href="#contatti" class="btn btn-line">Parliamone</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-panel">
+            <a class="hero-emblem" id="heroEmblem" href="#servizi" aria-label="Esplora i servizi firmati JEVE">
+              <img src="./assets/leone-rosso-hd.png" alt="" width="1368" height="1268" decoding="async" fetchpriority="high">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIZI ===================== -->
+    <section class="sec sec-tint sec-grid services-commercial" id="servizi">
+      <div class="shell">
+        <header class="sec-head services-head">
+          <p class="eyebrow">I nostri servizi</p>
+          <h2 class="sec-title">Il servizio giusto parte dal <span class="accent">risultato</span></h2>
+          <div class="head-icos" id="headIcos" aria-label="Le quattro aree JEVE"></div>
+        </header>
+
+        <div class="filters" id="filters" role="tablist" aria-label="Scegli il risultato che cerchi"></div>
+
+        <div class="explorer">
+          <div class="ex-list" id="exList"></div>
+          <aside class="ex-view" id="exView" aria-live="polite"></aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METODO ===================== -->
+    <section class="sec sec-white" id="metodo">
+      <div class="shell">
+        <header class="sec-head">
+          <p class="eyebrow">Il metodo JEVE</p>
+          <h2 class="sec-title">Un percorso <span class="accent">chiaro</span></h2>
+          <p class="sec-lead">Quattro fasi, un referente. Per ognuna, cosa ricevi.</p>
+        </header>
+
+        <div class="rail" id="method"></div>
+
+        <div class="rail-foot">
+          <a class="btn btn-line" href="https://jeve.it/#riconoscimenti">Guarda i riconoscimenti <span class="ar">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROGETTI ===================== -->
+    <section class="sec sec-wash" id="progetti">
+      <div class="shell">
+        <header class="sec-head">
+          <p class="eyebrow">I nostri progetti</p>
+          <h2 class="sec-title">Idee che diventano <span class="accent">risultati</span></h2>
+          <p class="sec-lead">Apri un progetto e scopri come l&rsquo;analisi è diventata un risultato concreto.</p>
+        </header>
+
+        <div class="acc" id="works"></div>
+
+        <div class="reports-cta reports-cta-c">
+          <div>
+            <p class="eyebrow">Ricerca JEVE</p>
+            <h3 class="reports-cta-t">Oltre ai progetti, pubblichiamo <span class="accent">report</span></h3>
+            <p class="reports-cta-d">Analisi brevi su settori e mercati che seguiamo. Quattro studi di area, liberamente consultabili.</p>
+          </div>
+          <button type="button" class="btn btn-solid" id="reportsToggle" aria-expanded="false" aria-controls="reports">Guarda i report <span class="ar">&rarr;</span></button>
+        </div>
+
+        <div class="flips-wrap" id="reports" hidden>
+          <div class="flips">
+          <article class="flip" tabindex="0" aria-label="Automotive e la transizione verso l’ibrido-elettrico">
+            <div class="flip-in">
+              <div class="flip-face flip-front">
+                <svg class="flip-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14.5h18M4.2 14.5l1.7-5.1a2 2 0 0 1 1.9-1.4h8.4a2 2 0 0 1 1.9 1.4l1.7 5.1"/><path d="M4.2 14.5v3.2M19.8 14.5v3.2"/><circle cx="7.6" cy="17.7" r="1.5"/><circle cx="16.4" cy="17.7" r="1.5"/><path d="M13.2 3.5 10.6 8h2.6l-1.4 3.4"/></svg>
+                <p class="flip-lab">Automotive</p>
+                <h3>La transizione verso l’ibrido-elettrico</h3>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="flip-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14.5h18M4.2 14.5l1.7-5.1a2 2 0 0 1 1.9-1.4h8.4a2 2 0 0 1 1.9 1.4l1.7 5.1"/><path d="M4.2 14.5v3.2M19.8 14.5v3.2"/><circle cx="7.6" cy="17.7" r="1.5"/><circle cx="16.4" cy="17.7" r="1.5"/><path d="M13.2 3.5 10.6 8h2.6l-1.4 3.4"/></svg>
+                <p class="flip-lab">Automotive</p>
+                <h3>Automotive e la transizione verso l’ibrido-elettrico</h3>
+                <div class="flip-body">
+                  <p class="flip-p">Un’analisi della transizione ibrido-elettrica che sta caratterizzando il settore automotive, con focus sulla domanda e il panorama dei consumatori.</p>
+                </div>
+                <a class="btn btn-solid flip-cta" href="./report-automotive.html" tabindex="-1">Vai al Report <span class="ar">&rarr;</span></a>
+              </div>
+            </div>
+            <a class="flip-link" href="./report-automotive.html" aria-label="Apri Automotive e la transizione verso l’ibrido-elettrico"></a>
+          </article>
+          <article class="flip" tabindex="0" aria-label="Report strategico Data Centre">
+            <div class="flip-in">
+              <div class="flip-face flip-front">
+                <svg class="flip-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3.6" width="16" height="5" rx="1.3"/><rect x="4" y="10.5" width="16" height="5" rx="1.3"/><path d="M7.4 6.1h.01M10.2 6.1h.01M7.4 13h.01M10.2 13h.01"/><path d="M9 17.6v2.8M15 17.6v2.8M6.4 20.4h11.2"/></svg>
+                <p class="flip-lab">Infrastrutture</p>
+                <h3>L’evoluzione del settore dei data centre</h3>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="flip-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3.6" width="16" height="5" rx="1.3"/><rect x="4" y="10.5" width="16" height="5" rx="1.3"/><path d="M7.4 6.1h.01M10.2 6.1h.01M7.4 13h.01M10.2 13h.01"/><path d="M9 17.6v2.8M15 17.6v2.8M6.4 20.4h11.2"/></svg>
+                <p class="flip-lab">Infrastrutture</p>
+                <h3>Report strategico Data Centre</h3>
+                <div class="flip-body">
+                  <p class="flip-p">Un’indagine sull’evoluzione delle infrastrutture digitali globali, guidata dal boom dell’Intelligenza Artificiale, con un focus sulle sfide energetiche e di mercato.</p>
+                </div>
+                <a class="btn btn-solid flip-cta" href="./report-data-centre.html" tabindex="-1">Vai al Report <span class="ar">&rarr;</span></a>
+              </div>
+            </div>
+            <a class="flip-link" href="./report-data-centre.html" aria-label="Apri Report strategico Data Centre"></a>
+          </article>
+          <article class="flip" tabindex="0" aria-label="Evoluzione del mercato farmaceutico">
+            <div class="flip-in">
+              <div class="flip-face flip-front">
+                <svg class="flip-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.9" y="8.6" width="18.2" height="6.8" rx="3.4" transform="rotate(-38 12 12)"/><path d="M9.1 8.4 15 14.3"/></svg>
+                <p class="flip-lab">Farmaceutico</p>
+                <h3>Evoluzione del mercato farmaceutico</h3>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="flip-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.9" y="8.6" width="18.2" height="6.8" rx="3.4" transform="rotate(-38 12 12)"/><path d="M9.1 8.4 15 14.3"/></svg>
+                <p class="flip-lab">Farmaceutico</p>
+                <h3>Evoluzione del mercato farmaceutico</h3>
+                <div class="flip-body">
+                  <p class="flip-p">Uno studio sulla profonda trasformazione del settore in Italia, dall’ingresso dei grandi gruppi finanziari all’evoluzione verso la &ldquo;Farmacia dei Servizi&rdquo; e la sanità digitale.</p>
+                </div>
+                <a class="btn btn-solid flip-cta" href="./report-farmaceutico.html" tabindex="-1">Vai al Report <span class="ar">&rarr;</span></a>
+              </div>
+            </div>
+            <a class="flip-link" href="./report-farmaceutico.html" aria-label="Apri Evoluzione del mercato farmaceutico"></a>
+          </article>
+          <article class="flip" tabindex="0" aria-label="Trend “plant-based food”">
+            <div class="flip-in">
+              <div class="flip-face flip-front">
+                <svg class="flip-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.4v-6.7"/><path d="M12 13.7c0-3.4 2.4-6.1 6.1-6.5.3 3.8-2.2 6.5-6.1 6.5z"/><path d="M12 15.4C9 15.4 6.6 13.1 6.3 9.8c3.3.4 5.4 2.6 5.7 5.6z"/><path d="M6.6 20.4h10.8"/></svg>
+                <p class="flip-lab">Food &amp; Beverage</p>
+                <h3>Il futuro del plant-based italiano</h3>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="flip-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.4v-6.7"/><path d="M12 13.7c0-3.4 2.4-6.1 6.1-6.5.3 3.8-2.2 6.5-6.1 6.5z"/><path d="M12 15.4C9 15.4 6.6 13.1 6.3 9.8c3.3.4 5.4 2.6 5.7 5.6z"/><path d="M6.6 20.4h10.8"/></svg>
+                <p class="flip-lab">Food &amp; Beverage</p>
+                <h3>Il futuro del plant-based italiano</h3>
+                <div class="flip-body">
+                  <p class="flip-p">Una panoramica sulla rapida ascesa del mercato plant-based in Italia, esplorando i nuovi trend di consumo e le opportunità strategiche per l’intera filiera agroalimentare.</p>
+                </div>
+                <a class="btn btn-solid flip-cta" href="./report-food-beverage.html" tabindex="-1">Vai al Report <span class="ar">&rarr;</span></a>
+              </div>
+            </div>
+            <a class="flip-link" href="./report-food-beverage.html" aria-label="Apri Trend “plant-based food”"></a>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPATTO ===================== -->
+    <section class="sec sec-tint sec-grid" id="impatto">
+      <div class="shell">
+        <div class="imp-head">
+          <header>
+            <p class="eyebrow">Il nostro impatto</p>
+            <h2 class="sec-title">Progetto dopo <span class="accent">progetto</span></h2>
+          </header>
+
+          <div class="imp-years" aria-label="Anno dei dati">
+            <button type="button" data-impact-year="2024" aria-pressed="false">2024</button>
+            <button type="button" data-impact-year="2025" aria-pressed="false">2025</button>
+            <button type="button" class="is-active" data-impact-year="2026" aria-pressed="true">2026</button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong data-impact-value="projects">52<sup>+</sup></strong><span>Progetti</span></div>
+          <div class="stat"><strong data-impact-value="companies">34</strong><span>Aziende</span></div>
+          <div class="stat"><strong data-impact-value="members">48</strong><span>Membri formati</span></div>
+          <div class="stat"><strong data-impact-value="awards">5</strong><span>Premi</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section class="sec sec-white" id="contatti">
+      <div class="shell cta-grid">
+        <div class="cta-copy">
+          <p class="eyebrow">Il prossimo progetto</p>
+          <h2 class="sec-title">Dai valore alle tue <span class="accent">idee</span></h2>
+          <ul class="reasons">
+            <li><span class="rn">01</span><b>Risposta in 2 giorni</b></li>
+            <li><span class="rn">02</span><b>Preventivo gratuito</b></li>
+            <li><span class="rn">03</span><b>Call di mezz&rsquo;ora</b></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm">
+          <div class="fields">
+            <div class="field">
+              <label for="companyName">Azienda o referente *</label>
+              <input type="text" id="companyName" name="companyName" required placeholder="Rossi S.r.l.">
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="nome@azienda.it">
+            </div>
+            <div class="field wide">
+              <label for="serviceInterest">Area</label>
+              <select id="serviceInterest" name="serviceInterest">
+                <option value="business-analysis">Business Analysis</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales &amp; Business Development</option>
+                <option value="it">IT</option>
+                <option value="altro">Non lo so ancora</option>
+              </select>
+            </div>
+            <div class="field wide">
+              <label for="projectNotes">Il tuo progetto *</label>
+              <textarea id="projectNotes" name="projectNotes" rows="4" required placeholder="Due righe bastano."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-solid full">Invia la richiesta <span class="ar">&rarr;</span></button>
+          <p class="form-note">Si apre il tuo programma di posta, già compilato. Oppure scrivi a <a href="mailto:info@jeve.it">info@jeve.it</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== MODALE ===================== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-x" id="modalClose" aria-label="Chiudi">&#10005;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <a href="https://jeve.it" class="footer-logo">
+          <img src="./assets/logo-jeve-bianco.png" alt="JEVE" onerror="this.src='./assets/logo-jeve-compatto-bianco.png'; this.onerror=function(){this.remove()};">
+        </a>
+        <p class="footer-name"><b>JEVE</b><span>Junior Enterprise Venezia</span></p>
+        <p class="footer-claim">Step into the future of your business.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="fcol">
+          <h3>Esplora</h3>
+          <a href="#servizi">Servizi</a>
+          <a href="#metodo">Metodo</a>
+          <a href="#progetti">Progetti</a>
+          <a href="#impatto">Impatto</a>
+          <a href="https://jeve.it/partner-2/">Partner</a>
+          <a href="https://jeve.it/chi-siamo/">Chi siamo</a>
+          <a href="https://jeve.it/entra-in-jeve/">Entra in JEVE</a>
+        </div>
+        <div class="fcol">
+          <h3>Seguici</h3>
+          <a href="https://it.linkedin.com/company/jeve-junior-enterprise-venezia" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/jeve.venezia/" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:info@jeve.it">Email</a>
+        </div>
+        <div class="fcol">
+          <h3>Venezia</h3>
+          <p class="faddr">
+            Cannaregio 2978<br>
+            30121 Venezia, VE<br>
+            +39 391 720 8715
+          </p>
+          <p class="fvat">P.IVA: 04548570276<br>C.F.: 94096850279</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© 2026 <b>JEVE</b> Junior Enterprise Ca' Foscari Venezia</span>
+      <span class="fbot-links">
+        <a href="https://jeve.it/privacy-policy/">Privacy</a>
+        <a href="https://jeve.it/cookie-policy/">Cookie</a>
+      </span>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('reportsToggle');
+      var box = document.getElementById('reports');
+      if (btn && box) {
+        var EASE = 'cubic-bezier(.22,.9,.2,1)';
+        var anim = null;
+        var run = function (from, to, done) {
+          if (anim) { anim.cancel(); anim = null; }
+          box.classList.add('is-animating');
+          var pad = getComputedStyle(box).paddingTop;
+          anim = box.animate(
+            [
+              { height: from + 'px', paddingTop: from === 0 ? '0px' : pad },
+              { height: to + 'px', paddingTop: to === 0 ? '0px' : pad }
+            ],
+            { duration: 800, easing: EASE }
+          );
+          anim.finished.then(function () {
+            anim = null;
+            box.classList.remove('is-animating');
+            if (done) done();
+          }).catch(function () {});
+        };
+        btn.addEventListener('click', function () {
+          var opening = box.hasAttribute('hidden') || box.dataset.closing === '1';
+          var animate = matchMedia('(min-width: 900px)').matches;
+          box.classList.remove('is-animating');
+          if (opening) {
+            box.dataset.closing = '';
+            box.removeAttribute('hidden');
+            if (animate) run(0, box.scrollHeight, null);
+          } else if (animate) {
+            box.dataset.closing = '1';
+            run(box.scrollHeight, 0, function () {
+              box.dataset.closing = '';
+              box.setAttribute('hidden', '');
+            });
+          } else {
+            box.setAttribute('hidden', '');
+          }
+          btn.setAttribute('aria-expanded', String(opening));
+          btn.innerHTML = opening
+            ? 'Chiudi sezione report <span class="ar">&uarr;</span>'
+            : 'Guarda i report <span class="ar">&rarr;</span>';
+        });
+      }
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.flip'));
+      if (!cards.length) return;
+      var small = function () { return window.matchMedia('(max-width: 899px)').matches; };
+      var sync = function () {
+        if (!small()) { cards.forEach(function (c) { c.classList.remove('is-flipped'); }); return; }
+        var mid = window.innerHeight / 2;
+        cards.forEach(function (c) {
+          var r = c.getBoundingClientRect();
+          c.classList.toggle('is-flipped', r.top < mid - r.height * 0.18 && r.bottom > mid + r.height * 0.18);
+        });
+      };
+      addEventListener('scroll', sync, { passive: true });
+      addEventListener('resize', sync);
+      sync();
+    })();
+  </script>
+</body>
+</html>
